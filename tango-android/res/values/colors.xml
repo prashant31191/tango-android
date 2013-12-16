@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 Jeff Sharkey, http://jsharkey.org/
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+<color name="transparent">#00000000</color>
+    <color name="black">#f000</color>
+    <color name="white">#ffff</color>
+    <color name="semi_white">#8fff</color>
+    <color name="semi_black">#8000</color>
+    <color name="blue">#FF3D8CB8</color>
+    <color name="grey">#FF4C4B4B</color>
+    <color name="productinfo">#fff1f4</color>
+    <!-- tab中，未选中的tab上文字的颜色 -->
+    <color name="white_light">#FFC7C7C7</color>
+    <color name="red">#FFFF0000</color>
+    <color name="suit_black_bg">#FF242424</color>
+    <!-- 粉色标题 栏上的文字的颜色  -->
+    <color name="top_title_textColor">#FF2F2F2F</color>
+    <color name="bgColor">#000000</color>
+        <!-- 微博 -->
+     <color name="weibo_transparent">#00000000</color>  
+    <color name="text_num_gray">#333</color>
+    <color name="dialog_title_blue">#9CCCF7</color>
+    
+    <drawable name="screen_background_worm">#efbbbb</drawable>  
+    	<drawable name="screen_background_black">#ff000000</drawable>
+    <drawable name="translucent_background">#e0000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+</resources>

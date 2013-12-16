@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+      <!-- //头部 -->
+<include layout="@layout/activity_base_head" />	
+<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_below="@id/add_title"
+>
+<WebView
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/webView"
+/>
+</LinearLayout>
+
+<ProgressBar
+		 android:id="@+id/pb"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/add_title"
+         style="?android:attr/progressBarStyleHorizontal"
+         android:max="100"
+          />
+ 		
+</RelativeLayout>

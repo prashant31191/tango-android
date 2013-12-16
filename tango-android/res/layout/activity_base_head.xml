@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 公共头部 -->
+    <RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/add_title"
+        android:layout_gravity="center" 
+        android:orientation="horizontal" 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/head_bg"
+        >
+    <!-- 左侧按钮 -->
+	    <Button
+	    	android:layout_alignParentLeft="true"
+	    	android:padding="4dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/left_btn"
+	        android:textColor="@color/white"
+	        android:textSize="16sp"
+	        android:background="@drawable/back_btn_selector"
+	        android:visibility="invisible"
+	        android:layout_marginLeft="4dp"
+	        android:layout_centerVertical="true"/>
+	        	        <!-- 右侧按钮 -->
+		<Button 
+			android:layout_alignParentRight="true"
+			android:padding="4dp"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="16sp"
+	        android:textColor="@color/white"
+	        android:id="@+id/right_btn"
+	        android:background="@drawable/rightbutton_selector"
+	        android:visibility="invisible"
+	        android:layout_marginRight="4dp"
+	        android:layout_centerVertical="true"
+	        />
+	       <!-- 中间文本 -->
+		<TextView 
+			android:layout_toLeftOf="@id/right_btn"
+  			android:layout_toRightOf="@id/left_btn"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:id="@+id/center_tv"
+	        android:gravity="center_vertical|center_horizontal"
+	        style="@style/title_text"
+	        android:layout_centerVertical="true"
+	        />
+
+	</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"   
+    android:layout_height="fill_parent" >
+
+    <!-- //头部 -->
+
+    <include layout="@layout/activity_base_head" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/add_title" >
+
+        <!-- 1 -->
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true" >
+            
+            <ImageView
+                android:id="@+id/pic_iv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:rotation="90"
+                android:scaleType="fitCenter" />
+            
+
+            <or.tango.android.view.ProgressView
+                android:id="@+id/progressView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </FrameLayout>
+
+        <!-- 2 -->
+
+        <SlidingDrawer
+            android:id="@+id/drawer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:content="@+id/content"
+            android:handle="@+id/handle" >
+
+            <ImageView
+                android:id="@id/handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bottom_bar" />
+
+            <FrameLayout
+                android:id="@id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ListView
+                    android:id="@+id/contentListView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#808080"
+                    android:cacheColorHint="#00000000" />
+
+                <LinearLayout
+                    android:id="@+id/noMsgLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="invisible" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="抱歉没有识别出配料，请重新拍照尝试"
+                        android:textSize="18pt" />
+                </LinearLayout>
+            </FrameLayout>
+        </SlidingDrawer>
+
+        <!-- 3 -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/loadingLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </FrameLayout>
+
+</RelativeLayout>

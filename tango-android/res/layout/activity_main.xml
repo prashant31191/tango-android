@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#404040"
+    >
+      <!-- //头部 -->
+<include layout="@layout/activity_base_head" />	
+<RelativeLayout
+	android:layout_below="@id/add_title"
+	android:layout_width="fill_parent" 
+	 android:layout_height="fill_parent">
+	 <Button
+	 android:id="@+id/btn_photo"
+	 android:layout_centerHorizontal="true"
+	 android:layout_alignParentBottom="true"
+	 android:layout_width="fill_parent" 
+	 android:layout_height="wrap_content" 
+	 android:layout_marginBottom="30dp"
+	 android:background="@drawable/user_defined_camera_btn_selector"
+	 />
+	<Button
+	 	android:id="@+id/btn_photo_system"
+	 	android:layout_above="@id/btn_photo"
+	 	android:layout_width="fill_parent" 
+	 	android:layout_height="wrap_content"
+	 	android:background="@drawable/sys_camera_btn_selector"
+	 />
+	<Button
+	 	android:id="@+id/btn_readpic"
+	 	android:layout_above="@id/btn_photo_system"
+	 	android:layout_width="fill_parent" 
+	 	android:layout_height="wrap_content"
+	 	android:background="@drawable/user_defined_readpic_btn_selector"
+	 />
+	<Button 
+	    android:id="@+id/btn_setting"
+	    android:layout_above="@id/btn_readpic"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/user_defined_setting_btn_selector"
+	    />
+	
+ </RelativeLayout>
+ 
+ 		<LinearLayout
+ 			android:orientation="horizontal"
+			android:id="@+id/loadingLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+		/>
+</RelativeLayout>

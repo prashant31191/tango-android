@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Openresearch Tango</string>
+    <string name="app_name">Tango</string>
+    <string name="about">关于</string>
+    <string name="version">Version:1.0.0</string>
+    <string name="para1">Version 1.0.0 小结：\n
+\tTango食品助手APP为Tango项目的首个子项目，其预计完成的功能如下：使用手机摄像头拍摄配料图片，检测其中的文字，调用文字识别模块
+识别其中的文字，然后利用配料库筛选出其中的配料部分。\n
+\t目前识别率不是很理想，而且拍摄的环节对机型适应性较差，还希望添加一些其余的功能，希望大家可以提供修改方案或者帮助完成修改。\n
+\t如果第一期比赛获得成功，将举办第二期APP大赛，届时将添加赏花宝典，宠物识别等功能，欢迎大家关注http://openresearch.baidu.com\n
+\t开发团队：Popcorn。 成员：\n
+\t\t清华大学：柴华（负责人）\n
+\t\t南京大学：江磊\n
+\t\t浙江大学：王绍楠\n
+\t\t北京邮电大学：郭沛\n
+\t\t四川大学：史汉发\n
+\t\t昆明理工大学：周明辉\n
+\t项目负责人：\n
+\t\t百度校园：田瑞雄\n
+\t\t百度校园：万程\n
+\t\t清华大学：柴华\n
+</string>
+    <string name="para2"><![CDATA[ \tTango项目是百度校园部发起的一项面向高校在校学生的开放研究平台，旨在提供一个相互交流的平台。\n
+\t该APP来源于  http://openresearch.baidu.com 的Tango食品助手APP大赛,由Tango开源开发团队Popcorn完成首个版本V1.0.0，希望有兴趣对其改进或者添加新功能的同学能够加入到百度开源社区中来.\n
+\t第二期Tango APP大赛也在筹备当中，届时将会添加新功能等待你来参与改进，代码所在地址：\n
+\thttp://opencode.baidu.com\n
+\t请使用\tgit clone http://opencode.baidu.com/git/tango_ladd\t获取源代码 ]]></string>
+
+</resources>

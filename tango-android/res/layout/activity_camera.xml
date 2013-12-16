@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" 
+    android:fadingEdgeLength="3dip"
+    android:background="@drawable/camera_background">
+      
+        <LinearLayout            
+            android:id="@+id/zoom_buton_layout"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+			<ZoomButton android:id="@+id/zoombutton_add"
+	 			android:layout_gravity="left" 
+	 			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:src="@drawable/user_define_zoom_add_button_selector">
+  			</ZoomButton>
+  			<ZoomButton android:id="@+id/zoombutton_minus"
+	 			android:layout_gravity="left" 
+	 			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content" 
+	  			android:src="@drawable/user_define_zoom_minus_button_selector">
+  			</ZoomButton>
+  			<Button android:id="@+id/button_mode"
+	 			android:layout_gravity="left" 
+	 			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content" 
+	  			android:background="@drawable/user_define_mode_button_selector">
+  			</Button>
+  		</LinearLayout>
+  		
+        <or.tango.android.view.DrawView  
+            android:id="@+id/mask_preview"  
+            android:layout_width="200dp"  
+            android:layout_height="50dp"   
+            android:layout_centerInParent="true"  
+            />  
+        <android.view.SurfaceView  
+            android:id="@+id/camera_preview"  
+            android:layout_width="fill_parent"  
+            android:layout_height="fill_parent"  
+            android:layout_alignParentTop="true"  
+            android:layout_centerInParent="true"  
+            />          
+        <Button  
+            android:id="@+id/save_pic"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content" 
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+	 		android:layout_alignParentRight="true" 
+            android:background="@drawable/camera_shutter_btn_selector"/>  
+        
+</RelativeLayout>  

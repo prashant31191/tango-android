@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/win8_background"
+    >
+
+    <!-- 第1个TableLayout，用于描述表中的列属性。第0列可伸展，第1列可收缩，第2列被隐藏 -->
+
+    <!--  TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent_background"
+        android:layout_gravity="center_horizontal"
+        android:text="Tango"
+        android:textSize="25sp"
+        android:padding="5sp" >
+
+        android:id="@+id/table1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:collapseColumns="2"
+        android:padding="3dip"
+        android:shrinkColumns="2"
+        android:stretchColumns="0" 
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        -->
+
+     <LinearLayout android:orientation="horizontal"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content">
+
+	    <ImageView
+	        android:id="@+id/tr1"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="2dip"
+	        android:layout_marginLeft="2dip"
+	        android:layout_marginRight="2dip"
+	        android:layout_marginTop="2dip"
+	        android:layout_weight="0.50"
+	        android:src="@drawable/food_helper"
+	        android:contentDescription="food"
+	        android:scaleType="centerInside"/>
+	    <ImageView
+	        android:id="@+id/tr2"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight=".50"
+	        android:layout_marginLeft="2dip"
+	        android:layout_marginRight="2dip"
+	        android:layout_marginTop="2dip"
+	        android:layout_marginBottom="2dip"
+	        android:src="@drawable/flower_dic"
+	        android:contentDescription="flower"
+	        android:scaleType= "centerInside"/>
+        </LinearLayout>
+        
+        <ImageView 
+	        android:id="@+id/tr3"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight=".50"
+	        android:layout_marginLeft="2dip"
+	        android:layout_marginRight="2dip"
+	        android:layout_marginTop="2dip"
+	        android:layout_marginBottom="2dip"
+	        android:src="@drawable/more"
+	        android:contentDescription="more"
+	        android:scaleType= "centerInside"/>
+	        
+</LinearLayout>
